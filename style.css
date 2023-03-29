@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Chewy";
+    src: url(/fonts/Chewy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(/fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Garamond";
+    src: url(/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Open sans";
+    src: url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-dark: #0E0E0E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    color: var(--color-white);
+    width: 1920px;
+}
+
+header {
+    background-color: var(--color-dark);
+    height: 68px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts {
+    width: 400px;
+    height: 24px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+color: var(--color-white);
+}
+
+.email::before {
+    content: url(/SVGs/Email.png);
+    position: relative;
+    right: 10px;
+}
+
+.phone {
+    position: relative;
+    top: -5px;
+}
+
+.phone::before {
+    content: url(/SVGs/headphones.png);
+    position: relative;
+    right: 10px;
+    top: 5px;
+}
