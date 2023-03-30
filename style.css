@@ -53,7 +53,9 @@ header {
 }
 
 a {
-color: var(--color-white);
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .email::before {
@@ -80,4 +82,31 @@ color: var(--color-white);
     display: flex;
     justify-content: space-around;
     padding-left: 50%;
+}
+
+.introduction {
+    height: 1520px;
+    background-image: url(/SVGs/backgroound_1.svg);
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1717px;
+    height: 45px;
+    margin-top: 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 492px;
+    height: 20px;
+}
+
+.logo {
+    font-size: 45px;
 }
