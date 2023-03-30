@@ -18,9 +18,23 @@
     src: url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
+@font-face {
+    font-weight: normal;
+    font-family: "Arsenal";
+    src: url(/fonts/Arsenal-Regular.ttf);
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: "Arsenal";
+    src: url(/fonts/Arsenal-Bold.ttf);
+}
+
 :root {
     --color-white: #ffffff;
     --color-dark: #0E0E0E;
+    --color-grey: #777777;
+
 }
 
 * {
@@ -54,8 +68,6 @@ header {
 
 a {
     color: var(--color-white);
-    text-decoration: none;
-    font-weight: 700;
 }
 
 .email::before {
@@ -88,7 +100,8 @@ a {
     height: 1520px;
     background-image: url(/SVGs/backgroound_1.svg);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
@@ -109,4 +122,67 @@ nav {
 
 .logo {
     font-size: 45px;
+}
+
+.points {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.headers-and-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 347px;
+    width: 599px;
+    margin-top: 148px;
+}
+
+h2 {
+    font-family: "Arsenal", sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.main-header {
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-size: 144px;
+    position: relative;
+    bottom: 10px;
+}
+
+.slogan {
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+
+.interactive {
+    height: 75px;
+    margin-top: 17px;
+    display: flex;
+
+}
+
+input {
+    width: 476px;
+    height: 75px;
+    border-radius: 10px 0px 0px 10px;
+    border: 0;
+    font-family: "Open sans", sans-serif;
+    font-size: 20px;
+    padding: 0 0 0 34px;
+    color: var(--color-grey);
+}
+
+button {
+    width: 96px;
+    height: 75px;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+    background-color: var(--color-dark);
+   
 }
