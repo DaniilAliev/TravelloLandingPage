@@ -34,6 +34,10 @@
     --color-white: #ffffff;
     --color-dark: #0E0E0E;
     --color-grey: #777777;
+    --color-deepblue: #09131B;
+    --color-yellow: #F2C94C;
+    --color-lightblue: #8991AF;
+    --color-blue: #0059AC;
 
 }
 
@@ -47,6 +51,7 @@ body {
     font-weight: 400;
     color: var(--color-white);
     width: 1920px;
+    background-color: var(--color-deepblue);
 }
 
 header {
@@ -180,7 +185,7 @@ input {
     color: var(--color-grey);
 }
 
-button {
+.search-button {
     width: 96px;
     height: 75px;
     border-radius: 0px 10px 10px 0px;
@@ -239,4 +244,84 @@ button {
 .description > p {
     font-size: 17px;
     line-height: 28.9px;
+}
+
+.tour-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1401px;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    display: inline-block;
+    font-weight: 700;
+    
+  }
+
+li > a {
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    font-size: 19px;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    width: 1401px;
+    margin-top: 62px;
+}
+
+.item {
+    width: 320px;
+    height: 681px;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+}
+
+.hotel-name {
+    padding: 38px 0 0 15px;
+    font-size: 25px;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    margin: 50px 22px 0 0;
+}
+
+.previous-price {
+    color: #B1B4B9;
+    font-size: 22px;
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 48px;
+}
+
+.description-item {
+    width: 255px;
+    height: 100px;
+    margin: 24px 0px 0px 21px;
+    color: var(--color-lightblue);
+}
+
+.select-rooms-button {
+    background-color: var(--color-blue);
+    width: 290px;
+    height: 82px;
+    margin: 15px;
+    font-family: "Open sans";
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-white);
+    border: none;
+    letter-spacing: 0.2em;
+    border-radius: 8px;
 }
