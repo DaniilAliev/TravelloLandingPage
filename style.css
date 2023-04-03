@@ -270,10 +270,14 @@ li > a {
 }
 
 .tab-content {
-    display: flex;
-    justify-content: center;
     width: 1401px;
     margin-top: 62px;
+}
+
+.tab-pane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .item {
