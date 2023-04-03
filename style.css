@@ -38,7 +38,8 @@
     --color-yellow: #F2C94C;
     --color-lightblue: #8991AF;
     --color-blue: #0059AC;
-
+    --color-lightblue: #5ea1e0;
+    --color-deepgrey: #3d3d3d;
 }
 
 * {
@@ -52,6 +53,10 @@ body {
     color: var(--color-white);
     width: 1920px;
     background-color: var(--color-deepblue);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 header {
@@ -191,7 +196,10 @@ input {
     border-radius: 0px 10px 10px 0px;
     border: 0;
     background-color: var(--color-dark);
-   
+}
+
+.search-button:hover {
+    background-color: var(--color-deepgrey);
 }
 
 .features {
@@ -260,7 +268,6 @@ input {
 .tabs li {
     display: inline-block;
     font-weight: 700;
-    
   }
 
 li > a {
@@ -275,9 +282,27 @@ li > a {
 }
 
 .tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+li:hover {
+    background-color: #777777;
+}
+
+li.active, li:hover{
+    padding: 5px 0 5px 0;
+    border-radius: 7px;
+}
+
+li.active {
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
 }
 
 .item {
@@ -328,4 +353,8 @@ li > a {
     border: none;
     letter-spacing: 0.2em;
     border-radius: 8px;
+}
+
+.select-rooms-button:hover {
+    background-color: var(--color-lightblue);
 }

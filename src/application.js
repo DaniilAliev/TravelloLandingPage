@@ -30,7 +30,6 @@ const inputItem = async () => {
 
         const button = document.querySelector('.select-rooms-button').cloneNode(true);
         [img, hotelName, pricesDiv, p, button].forEach((item) => itemDiv.append(item))
-        console.log(itemDiv)
 
         document.querySelector('#tab1').append(itemDiv)
     })
