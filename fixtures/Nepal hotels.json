@@ -1,0 +1,16 @@
+[
+    {
+        "photoPath": "/SVGs/hotels photo/Hotel Photo 2.png", 
+        "hotelName": "DoubleTree Montreal Hotel",
+        "previousPrice": "$149",
+        "currentPrice": "$99",
+        "description": "Habitasse quis morbi morbi nunc dignissim convallis vestibulum. Pharetra vel nulla quis egestas dui, duis nec vulputate nunc."
+    },
+    {
+        "photoPath": "/SVGs/hotels photo/Hotel Photo 3.png", 
+        "hotelName": "DoubleTree Montreal Hotel",
+        "previousPrice": "$149",
+        "currentPrice": "$99",
+        "description": "Habitasse quis morbi morbi nunc dignissim convallis vestibulum. Pharetra vel nulla quis egestas dui, duis nec vulputate nunc."
+    }
+    ]
