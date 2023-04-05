@@ -37,7 +37,7 @@ const inputItem = async () => {
         }) 
     }
     
-    for (let j = 0; j < data.length + 1; j += 1) {
+    for (let j = 0; j < data.length; j += 1) {
         print(data[j], j);
     }
 }

@@ -1,6 +1,5 @@
 const changeTabs = () => {
     const tabs = document.querySelector('.tabs');
-    console.dir(tabs)
     tabs.addEventListener('click', (e) => {
         e.preventDefault()
         // Код для вкладок
