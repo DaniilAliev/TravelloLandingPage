@@ -292,11 +292,11 @@ li > a {
     justify-content: space-around;
 }
 
-li:hover {
+.tabs > li:hover {
     background-color: #777777;
 }
 
-li.active, li:hover{
+li.active, .tabs > li:hover{
     padding: 5px 0 5px 0;
     border-radius: 7px;
 }
@@ -339,7 +339,7 @@ li.active {
     width: 255px;
     height: 100px;
     margin: 24px 0px 0px 21px;
-    color: var(--color-lightblue);
+    color: var(--color-span);
 }
 
 .select-rooms-button {
@@ -433,6 +433,7 @@ li.active {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 168px;
 }
 
 .highlight-item {
@@ -454,4 +455,116 @@ li.active {
     color: var(--color-span);
     font-size: 17px;
     line-height: 170%;
+}
+
+footer {
+    height: 1611px;
+}
+
+.footer-big {
+    height: 1397px;
+    background-image: url(SVGs/map/Vector.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-items {
+    width: 1401px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.footer-item {
+    width: 433px;
+    height: 847px;
+    background-color: var(--color-dark);
+    border-radius: 20px;
+}
+.footer-item > h3 {
+    font-size: 48px;
+    padding: 72px 0 0 60px;
+}
+
+.footer-item > h3 > span {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Open sans";
+}
+
+h4 {
+    font-family: "Arsenal";
+    font-weight: 400;
+    font-size: 20px;
+    padding: 17px 0 0 60px;
+}
+
+.footer-item > p {
+    font-size: 16px;
+    color: var(--color-span);
+    padding: 30px 0 0px 0px;
+    margin-left: 60px;
+    max-width: 309px;
+    min-height: 80px;
+    border-bottom: 2px solid  #EBECED33;
+}
+
+.footer-item > ul {
+    list-style: none;
+    line-height: 250%;
+    margin: 60px 0 0 80px;
+    color: var(--color-span);
+}
+
+.footer-item > ul > li {
+    list-style-image: url(SVGs/tick.png);
+    padding-left: 10px;
+}
+
+.footer-item > button {
+    margin: 217px 0 0 20%;
+    width: 264px;
+    height: 48px;
+    font-size: 16px;
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-blue);
+    border-radius: 8px;
+}
+
+.footer-item > button:hover {
+    background-color: var(--color-lightblue);
+}
+
+.footer-small {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 440px;
+    margin-top: 192px;
+    border-bottom: 1px solid var(--color-blue);
+}
+
+.footer-small > p > a {
+    font-size: 24px;
+    color: var(--color-span);
+}
+
+.street-adress {
+    margin-top: 18px;
+}
+
+.index {
+    margin-top: 10px;
+}
+
+.street-adress, .index {
+    color: var(--color-span);
+}
+
+.footer-small > .socials {
+    padding-left: 0;
+    margin-top: 40px;
 }
