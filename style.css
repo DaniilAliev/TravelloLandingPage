@@ -423,9 +423,15 @@ li.active {
     border-radius: 4px;
 }
 
-.slider-content:not(:first-child) {
+.slider-buttons > .active {
+    background-color: var(--color-yellow);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.slider-content:not(.active) {
     display: none;
-  }
+}
 
 .highlights {
     height: 920px;
