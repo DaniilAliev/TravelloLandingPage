@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import parses from './parses.js';
 
 const inputItem = async () => {
@@ -31,7 +32,7 @@ const inputItem = async () => {
       p.textContent = item.description;
 
       const button = document.querySelector('.select-rooms-button').cloneNode(true);
-      [img, hotelName, pricesDiv, p, button].forEach((item) => itemDiv.append(item));
+      [img, hotelName, pricesDiv, p, button].forEach((item1) => itemDiv.append(item1));
 
       document.querySelector(`#tab${i + 1}`).append(itemDiv);
     });
