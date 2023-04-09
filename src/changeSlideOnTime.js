@@ -18,8 +18,10 @@ const ChangeSlideOnTime = () => {
 
   const buttonsDiv = document.querySelector('.slider-buttons');
   buttonsDiv.addEventListener('click', (e) => {
-    const index = [...buttonsDiv.children].indexOf(e.target);
-    changing(index);
+    if (!e.target.classList.contains('slider-buttons')) {
+      const index = [...buttonsDiv.children].indexOf(e.target);
+      changing(index);
+    }
   });
 
   setInterval(() => {
